@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me | My Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <nav class="navbar">
+            <a href="index.html" class="logo">MyPortfolio</a>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="planner.html">Academic Planner</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            <button
+    type="button"
+    onclick="window.open('music-player.html', 'portfolioMusic', 'width=450,height=350')"
+    class="theme-toggle">
+    🎵 Play Music
+</button>
+<button
+    id="themeToggle"
+    class="theme-toggle"
+    type="button"
+    aria-label="Switch theme"
+    title="Switch theme">
+    🌙
+</button>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="page-banner">
+            <h1>Contact Me</h1>
+            <p>Have a question or an opportunity? Feel free to reach out.</p>
+        </section>
+
+        <section class="page-content">
+
+            <div class="form-container">
+
+                <h2 class="section-heading">Send Me a Message</h2>
+
+                <p>
+                    Please complete the form below. All fields are required.
+                </p>
+
+                <form id="contactForm" novalidate>
+
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input
+                            type="text"
+                            id="name"
+                            placeholder="Enter your full name"
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input
+                            type="text"
+                            id="email"
+                            placeholder="example@email.com"
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input
+                            type="text"
+                            id="phone"
+                            placeholder="Enter digits only"
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea
+                            id="message"
+                            placeholder="Write your message here..."
+                        ></textarea>
+                    </div>
+
+                    <button type="submit" class="form-button">
+                        Send Message
+                    </button>
+
+                    <p id="formFeedback" role="status" aria-live="polite"></p>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Owodunni Boluwatife's Portfolio. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>

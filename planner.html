@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Planner | My Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="planner-page">
+
+    <header class="site-header">
+        <nav class="navbar">
+
+            <a href="index.html" class="logo">MyPortfolio</a>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="planner.html" class="active">Academic Planner</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+           <button
+    type="button"
+    onclick="window.open('music-player.html', 'portfolioMusic', 'width=450,height=350')"
+    class="theme-toggle">
+    🎵 Play Music
+</button>
+<button
+    id="themeToggle"
+    class="theme-toggle"
+    type="button"
+    aria-label="Switch theme"
+    title="Switch theme">
+    🌙
+</button>
+
+        </nav>
+    </header>
+
+    <main class="planner-container">
+
+        <!-- PLANNER INTRODUCTION -->
+
+        <section class="planner-hero">
+
+            <p class="planner-eyebrow">● ACADEMIC PLANNER</p>
+
+            <h1>
+                Plan the week.<br>
+                <span>Finish the work.</span>
+            </h1>
+
+            <p id="currentDate" class="planner-date">
+                Organise your academic activities.
+            </p>
+
+        </section>
+
+
+        <!-- TASK CREATION FORM -->
+
+        <section class="planner-form-card">
+
+            <h2>Add a New Task</h2>
+
+            <form id="plannerForm">
+
+                <div class="planner-field">
+
+                    <label for="taskInput">Task description</label>
+
+                    <input
+                        type="text"
+                        id="taskInput"
+                        placeholder="e.g. Complete my web technologies assignment"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="planner-field">
+
+                    <label for="taskSubject">Subject</label>
+
+                    <select id="taskSubject" required>
+
+                        <option value="General">General</option>
+                        <option value="Web Development">Web Development</option>
+                        <option value="Programming">Programming</option>
+                        <option value="Mathematics">Mathematics</option>
+                        <option value="Computer Science">Computer Science</option>
+                        <option value="Research">Research</option>
+                        <option value="Other">Other</option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="planner-field">
+
+                    <label for="taskDueDate">Due date</label>
+
+                    <input type="date" id="taskDueDate">
+
+                </div>
+
+
+                <div class="planner-field">
+
+                    <label for="taskPriority">Priority</label>
+
+                    <select id="taskPriority">
+
+                        <option value="Low">Low</option>
+                        <option value="Medium" selected>Medium</option>
+                        <option value="High">High</option>
+
+                    </select>
+
+                </div>
+
+
+                <button type="submit" id="addTaskBtn" class="planner-add-btn">
+                    + Add Task
+                </button>
+
+            </form>
+
+        </section>
+
+
+        <!-- TASK MANAGEMENT -->
+
+        <section class="planner-tasks-card">
+
+            <div class="planner-section-heading">
+                <h2>My Tasks</h2>
+                <span id="taskCount">0 Tasks</span>
+            </div>
+
+
+            <div class="planner-filters">
+
+                <button type="button" class="filter-btn active" data-filter="all">
+                    All
+                </button>
+
+                <button type="button" class="filter-btn" data-filter="active">
+                    Active
+                </button>
+
+                <button type="button" class="filter-btn" data-filter="done">
+                    Done
+                </button>
+
+            </div>
+
+
+            <ul class="task-list" id="taskList">
+
+                <li id="emptyMessage">
+                    No tasks added yet. Start planning your academic activities!
+                </li>
+
+            </ul>
+
+
+            <button type="button" id="clearCompletedBtn" class="clear-tasks-btn">
+                Clear completed tasks
+            </button>
+
+        </section>
+
+
+        <!-- ACADEMIC PROGRESS -->
+
+        <section class="planner-progress-card">
+
+            <p class="planner-eyebrow">YOUR PERFORMANCE</p>
+
+            <h2>Academic Progress</h2>
+
+            <div class="progress-circle" id="progressCircle">
+
+                <div class="progress-inner">
+
+                    <strong id="progressPercentage">0%</strong>
+
+                    <span>Completed</span>
+
+                </div>
+
+            </div>
+
+            <p id="progressMessage">
+                Every completed task brings you closer to your goals.
+            </p>
+
+            <div class="progress-summary">
+
+                <div>
+                    <strong id="totalTasks">0</strong>
+                    <span>Total Tasks</span>
+                </div>
+
+                <div>
+                    <strong id="completedTasks">0</strong>
+                    <span>Completed</span>
+                </div>
+
+                <div>
+                    <strong id="pendingTasks">0</strong>
+                    <span>Pending</span>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Owodunni Boluwatife's Portfolio. All rights reserved.</p>
+    </footer>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>

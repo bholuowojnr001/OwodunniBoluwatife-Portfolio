@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects | My Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <nav class="navbar">
+            <a href="index.html" class="logo">MyPortfolio</a>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="planner.html">Academic Planner</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+         <button
+    type="button"
+    onclick="window.open('music-player.html', 'portfolioMusic', 'width=450,height=350')"
+    class="theme-toggle">
+    🎵 Play Music
+</button>
+<button
+    id="themeToggle"
+    class="theme-toggle"
+    type="button"
+    aria-label="Switch theme"
+    title="Switch theme">
+    🌙
+</button>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="page-banner">
+            <h1>My Projects</h1>
+            <p>A collection of my academic and practical technology projects.</p>
+        </section>
+
+        <section class="page-content">
+
+            <h2 class="section-heading">Featured Projects</h2>
+
+            <div class="project-grid">
+
+                <!-- PROJECT ONE -->
+                <article class="project-card">
+
+                    <img src="images/project1.png"
+                         alt="Student portfolio website screenshot"
+                         onerror="this.style.display='none'">
+
+                    <h3>Student Portfolio Website</h3>
+
+                    <p>
+                        A responsive personal portfolio website designed
+                        to showcase a student's biography, technical skills,
+                        academic achievements and projects.
+                    </p>
+
+                    <p><strong>Technologies:</strong> HTML, CSS and JavaScript</p>
+
+                    <a href="index.html" class="text-link">
+                        View Portfolio
+                    </a>
+
+                </article>
+
+                <!-- PROJECT TWO -->
+                <article class="project-card">
+
+                    <img src="images/project2.png"
+                         alt="Academic task planner screenshot"
+                         onerror="this.style.display='none'">
+
+                    <h3>Academic Task Planner</h3>
+
+                    <p>
+                        A simple academic management application that
+                        allows students to add tasks, monitor assignments,
+                        mark completed activities and delete tasks.
+                    </p>
+
+                    <p><strong>Technologies:</strong> HTML, CSS and JavaScript</p>
+
+                    <a href="planner.html" class="text-link">
+                        View Academic Planner
+                    </a>
+
+                </article>
+
+                <!-- PROJECT THREE -->
+                <article class="project-card">
+
+                    <img src="images/project3.png"
+                         alt="Contact form website screenshot"
+                         onerror="this.style.display='none'">
+
+                    <h3>Interactive Contact Form</h3>
+
+                    <p>
+                        A web-based contact form designed to collect
+                        visitors' information. It includes input validation
+                        to ensure that submitted details follow the
+                        required format.
+                    </p>
+
+                    <p><strong>Technologies:</strong> HTML, CSS and JavaScript</p>
+
+                    <a href="contact.html" class="text-link">
+                        View Contact Form
+                    </a>
+
+                </article>
+
+            </div>
+
+        </section>
+
+        <section class="page-content">
+            <div class="content-card">
+                <h2 class="section-heading">My Learning Experience</h2>
+
+                <p>
+                    Developing these projects helps me understand how
+                    different web technologies work together. I continue
+                    to improve my programming, creativity and
+                    problem-solving skills through practical exercises.
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Owodunni Boluwatife's Portfolio. All rights reserved.</p>
+    </footer>
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Student portfolio showcasing academic achievements, technical skills and projects.">
+    <title>My Portfolio | Home</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <nav class="navbar">
+            <a href="index.html" class="logo">MyPortfolio</a>
+
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="planner.html">Academic Planner</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+          <button
+    id="themeToggle"
+    class="theme-toggle"
+    type="button"
+    aria-label="Switch to light mode"
+    title="Switch theme">
+    ☀️
+</button>
+<button
+    type="button"
+    onclick="window.open('music-player.html', 'portfolioMusic', 'width=450,height=350')"
+    class="theme-toggle">
+    🎵 Play Music
+</button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <p class="eyebrow">WELCOME TO MY PORTFOLIO</p>
+
+                <h1>Hello, I'm <span>Owodunni Boluwatife</span></h1>
+
+                <h2>A Software Engineering Student</h2>
+
+                <p>
+                    Welcome to my personal portfolio. This website showcases
+                    my academic journey, technical skills, projects and
+                    interests as I develop my knowledge in technology.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="projects.html" class="btn btn-primary">
+                        View My Projects
+                    </a>
+
+                    <a href="contact.html" class="btn btn-outline">
+                        Contact Me
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <img src="images/profile.jpg"
+                     alt="My profile photograph"
+                     onerror="this.style.display='none'">
+
+<button type="button" id="editPhotoBtn" class="edit-photo-btn">
+    📷 Change Profile Picture
+</button>
+
+<div id="photoEditor" class="photo-editor" hidden>
+    <h3>Edit Profile Picture</h3>
+
+    <input type="file" id="photoUpload" accept="image/*">
+
+    <div class="crop-preview">
+        <canvas id="photoCanvas" width="400" height="400"></canvas>
+    </div>
+
+    <label for="zoomControl">Zoom</label>
+    <input type="range" id="zoomControl" min="1" max="3" step="0.1" value="1">
+
+    <label for="horizontalControl">Horizontal position</label>
+    <input type="range" id="horizontalControl" min="-200" max="200" value="0">
+
+    <label for="verticalControl">Vertical position</label>
+    <input type="range" id="verticalControl" min="-200" max="200" value="0">
+
+    <div class="photo-editor-actions">
+        <button type="button" id="rotatePhotoBtn">↻ Rotate</button>
+        <button type="button" id="savePhotoBtn">Save Picture</button>
+        <button type="button" id="cancelPhotoBtn">Cancel</button>
+    </div>
+</div>
+
+            </div>
+        </section>
+
+        <section class="intro-section">
+            <h2>About Me</h2>
+
+            <p>
+                I am a Software Engineering student with an interest in
+                technology, problem-solving and continuous learning.
+                I enjoy exploring how websites and digital applications
+                are designed and developed.
+            </p>
+
+            <a href="about.html" class="text-link">Learn More About Me →</a>
+        </section>
+
+        <section class="highlights">
+            <div class="highlight-card">
+                <h3>My Skills</h3>
+                <p>Discover the technical and personal skills I am developing.</p>
+            </div>
+
+            <div class="highlight-card">
+                <h3>My Projects</h3>
+                <p>Explore my academic and practical technology projects.</p>
+            </div>
+
+            <div class="highlight-card">
+                <h3>My Academic Journey</h3>
+                <p>Follow my learning activities and academic progress.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Owodunni Boluwatife's Portfolio. All rights reserved.</p>
+    </footer>
+<script src="js/script.js"></script>
+</body>
+</html>
